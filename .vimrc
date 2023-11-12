@@ -84,7 +84,7 @@ set showmatch
 set clipboard=unnamed
 
 "Establece la codificación de caracteres en UTF-8
-set encoding=utf-8
+set encoding=UTF-8
 
 "habilitar el soporte de colores de 24 bits (también conocidos como colores True Color) en el terminal cuando Vim se ejecuta en un entorno que lo admite.
 "set termguicolors
@@ -97,9 +97,21 @@ set nocompatible
 
 "Ayuda de vim
 ":help showcmd
+
+"Activa la funcion de autocompletado
+"set wildmenu
+"set wildmode=longest:full
+"set completeopt=menuone,menu,longest,preview
+
+"Establezca la fuente Vim en una Nerd Font
+"set guifont=DroidSansMono\ Nerd\ Font\ 10
+
+
 let g:polyglot_disabled = ['markdown']
 "---------------------PLUGINS-----------------------
 so ~/.vim/plugins.vim
 "---------------------PLUGINS-CONFIG-----------------------
 so ~/.vim/plugin-config.vim
+"---------------------MAPS-----------------------
+so ~/.vim/maps.vim
 
